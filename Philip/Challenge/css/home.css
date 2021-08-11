@@ -1,0 +1,29 @@
+.overflow-box {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  div.overflow-box img {
+    overflow: hidden !important;
+    -webkit-transform-origin: 65% 75% !important;
+            transform-origin: 65% 75% !important;
+    -webkit-filter: brightness(100%) !important;
+            filter: brightness(100%) !important;
+    -webkit-transition: -webkit-transform 1000ms, -webkit-filter 2000ms ease !important;
+    transition: -webkit-transform 1000ms, -webkit-filter 2000ms ease !important;
+    transition: transform 1000ms, filter 2000ms ease !important;
+    transition: transform 1000ms, filter 2000ms ease, -webkit-transform 1000ms, -webkit-filter 2000ms ease !important;
+  }
+  div.overflow-box img:hover {
+    overflow: hidden !important;
+    -webkit-filter: brightness(120%) !important;
+            filter: brightness(120%) !important;
+    -webkit-transition: -webkit-transform 500ms ease, -webkit-filter 1000ms ease !important;
+    transition: -webkit-transform 500ms ease, -webkit-filter 1000ms ease !important;
+    transition: transform 500ms ease, filter 1000ms ease !important;
+    transition: transform 500ms ease, filter 1000ms ease, -webkit-transform 500ms ease, -webkit-filter 1000ms ease !important;
+    -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+  }
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,38 @@
+.own-bgcolor {
+  background-color: #990012 !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto, Impact, Haettenschweiler, sans-serif  !important;
+  font-weight: bolder  !important;
+}
+
+header, footer {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+.own-home-bgimage {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#990012)), url("../img/hero1.jpg") !important;
+  background: linear-gradient(rgba(255, 255, 255, 0), #990012), url("../img/hero1.jpg") !important;
+  height: 25vh !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.own-review-bgimage {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#990012)), url("../img/hero2.jpg") !important;
+  background: linear-gradient(rgba(255, 255, 255, 0), #990012), url("../img/hero2.jpg") !important;
+  height: 25vh !important;
+  background-position: 40% 35% !important;
+  background-repeat: no-repeat !important;
+}
+/*# sourceMappingURL=style.css.map */

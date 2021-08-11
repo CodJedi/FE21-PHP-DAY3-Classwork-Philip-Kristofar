@@ -1,0 +1,23 @@
+.own-card-height {
+    min-height: auto !important;
+}
+
+// Hover Effect for Stars
+span {
+    color: #F4B400; 
+}
+
+
+// Mimicking bootstrap tablet breakpoint
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .own-card-height {
+        min-height: 35rem !important;
+    }
+}
+
+// Mimicking bootstrap desktop breakpoint
+@media screen and (min-width: 992px) {
+    .own-card-height {
+        min-height: 40rem !important;
+    }
+}

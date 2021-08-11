@@ -1,0 +1,44 @@
+@import "vars";
+
+.own-bgcolor {
+    background-color: $bg-color !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+// html {
+//     font-size: 62.5% !important; /* Default is 10px now */
+// }
+
+body {
+    // font-size: 2rem !important; /* basically equals 30px now by default */
+    font-family: "Open Sans", Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto, Impact, Haettenschweiler, sans-serif  !important;
+    font-weight: bolder  !important;
+}
+
+
+header, footer {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.8) !important;
+}
+
+
+// Crop and Define Hero Images
+.own-home-bgimage {
+    background: linear-gradient(rgba(255, 255, 255, 0), $bg-color), url('../img/hero1.jpg') !important;
+    height: 25vh !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important; 
+}
+
+.own-review-bgimage {
+    background: linear-gradient(rgba(255, 255, 255, 0), $bg-color), url('../img/hero2.jpg') !important;
+    height: 25vh !important;
+    background-position: 40% 35% !important;
+    background-repeat: no-repeat !important;
+}
+
