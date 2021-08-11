@@ -1,22 +1,6 @@
 <?php 
     require "../db_connect.php";
-    if (isset($_POST["submit"])) {
-        $fname = $_POST["name"];
-        $fdesc = $_POST["desc"];
-        $fprice = $_POST["price"];
-        $fimage = $_POST["img"];
-        // default image value isn't taken in DB on empty string, so doing a workaround
-        if (strlen($fimage) == 0) $fimage = "default_image.jpg";
-        debug_to_console([$fname, $fdesc, $fprice, $fimage]);
 
-        $update_query = "
-        INSERT INTO `dishes`(`dishID`, `name`, `price`, `description`, `image`) 
-        VALUES 
-        (NULL , '$fname', '$fprice', '$fdesc' , '$fimage')
-        ";
-        $result = mysqli_query($connect, $update_query);
-
-    }
 ?>
 
 <!DOCTYPE html>
@@ -90,7 +74,26 @@
             </form>
         </div>
 
-        <?php if ($result) echo "<p class='text-center'>Food item has been added successfully <a href='index.php'>go back to home</a></p>"; ?>
+        <?php 
+            if (isset($_POST["submit"])) {
+                $fname = $_POST["name"];
+                $fdesc = $_POST["desc"];
+                $fprice = $_POST["price"];
+                $fimage = $_POST["img"];
+                // default image value isn't taken in DB on empty string, so doing a workaround
+                if (strlen($fimage) == 0) $fimage = "default_image.jpg";
+                debug_to_console([$fname, $fdesc, $fprice, $fimage]);
+        
+                $update_query = "
+                INSERT INTO `dishes`(`dishID`, `name`, `price`, `description`, `image`) 
+                VALUES 
+                (NULL , '$fname', '$fprice', '$fdesc' , '$fimage')
+                ";
+                $result = mysqli_query($connect, $update_query);
+                if ($result) echo "<p class='text-center'>Food item has been added successfully <a href='index.php'>go back to home</a></p>"; 
+            }
+        
+        ?>
     </div> <!-- END MAIN CONTAINER -->
 
     <?php include "footer.php"; ?>

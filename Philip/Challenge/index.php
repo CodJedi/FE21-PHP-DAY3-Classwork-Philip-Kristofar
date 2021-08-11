@@ -26,7 +26,7 @@
         <?php 
             include "navbar.php";
             # `dishID`, `name`, `price`, `description`, `image`
-            function CreateFoodd($row) {
+            function CreateFood($row) {
                 return "
                 <div class='col col-md-6 col-lg-3'>                
                     <div class='card h-100 overflow-box'>
@@ -49,7 +49,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 g-xxl-5 px-2 px-md-4 pb-4 mx-auto">
             ';
             
-            while ($row = mysqli_fetch_assoc($result)) echo CreateFoodd($row);
+            while ($row = mysqli_fetch_assoc($result)) echo CreateFood($row);
             
             echo '</div>';
 
